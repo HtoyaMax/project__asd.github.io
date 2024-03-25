@@ -1,0 +1,1256 @@
+@import "fonts";
+@import "nullstyle";
+
+$grey: #667694;
+$white: #fff;
+$mainColor: #fff;
+$darkColor: #1e2c3a;
+
+$tablet: (991.98px);
+$mobile: (767.98px);
+$mobileSmall: (479.98px);
+
+@import "burger";
+@import "common";
+@import "button";
+@import "slider";
+
+[class*="__container"] {
+  max-width: 1416px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+[class*="__container-big"] {
+  max-width: 1726px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+[class*="-ibg"] img {
+  // height: 100%;
+  // width: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  // Притискаємо футер
+  > main {
+    flex: 1 1 auto;
+  }
+  // Фікс слайдерів
+  > * {
+    min-width: 0;
+  }
+}
+
+@import "popup";
+
+@import "header";
+//=======================================================================================================================
+.hero {
+  padding-top: 168px;
+  padding-bottom: 96px;
+
+  width: 100%;
+  height: 100vh; /* Занимает всю высоту экрана */
+  overflow-y: auto;
+  // .hero__container
+  &__container {
+    display: grid;
+    height: 100%;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  // .hero__content
+  &__content {
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  // .hero__block-header
+  &__block-header {
+  }
+
+  // .hero__popup
+  &__popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5); /* затемнение */
+  z-index: -1;
+}
+
+.hero-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34px;
+  max-width: 678px;
+  // .hero-header__title
+  &__title {
+    color: $white;
+    font-family: "GilroyB";
+    font-size: 64px;
+    line-height: 1.3;
+    max-width: 550px;
+  }
+  // .hero-header__text
+  &__text {
+    font-family: "GilroySb";
+    color: $white;
+    line-height: 1.5;
+  }
+  // .hero-header__button
+  &__button {
+  }
+}
+
+.hero-play {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: $white url(/img/hero/play.svg) center no-repeat;
+  &:hover {
+    background-color: #ffffffbb;
+  }
+}
+// ======================================================================================================================
+
+.services {
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255),
+    rgb(239, 237, 255) 100%
+  );
+  // .services__container
+  &__container {
+  }
+  // .services__body
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 217px;
+      left: -152px;
+      width: 304px;
+      height: 35px;
+      background: url(/img/decor/Vector.svg) center no-repeat;
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: -44px;
+      right: -44px;
+      width: 96px;
+      height: 89px;
+      background: url(/img/decor/tru.svg) center no-repeat;
+      z-index: -1;
+    }
+  }
+  // .services__item
+  &__item {
+    background-color: $white;
+    border-radius: 16px;
+    box-shadow: 0px 5px 25px 0px rgba(47, 128, 237, 0.2);
+    text-align: center;
+  }
+}
+.block-header {
+  // .block-header--center
+  &--center {
+  }
+  // .block-header__title
+  &__title {
+  }
+}
+.item-services {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  // .item-services__icon
+  &__icon {
+  }
+  // .item-services__title
+  &__title {
+    font-family: "GilroyB";
+    font-size: 24px;
+    line-height: 1.3;
+    color: #191919;
+  }
+  // .item-services__text
+  &__text {
+    font-family: "GilroyM";
+    font-size: 15px;
+    line-height: 1.5;
+    color: #191919;
+  }
+}
+// ======================================================================================================================
+
+.giveaway {
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  background: linear-gradient(
+    180deg,
+    rgb(239, 237, 255),
+    rgb(255, 255, 255) 100%
+  );
+  // .giveaway__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+  // .giveaway__benefits
+  &__benefits {
+  }
+  // .giveaway__block-header
+  &__block-header {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+  // .giveaway__barber
+  &__barber {
+  }
+  // .giveaway__winner
+  &__winner {
+  }
+}
+.benefits {
+  padding: 42px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  border-radius: 16px;
+
+  box-shadow: 0px 5px 25px 0px rgba(47, 128, 237, 0.2);
+  background: linear-gradient(
+    45deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 69.497%,
+    rgb(255, 199, 136) 100%
+  );
+  position: relative;
+  z-index: 2;
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(/img/giveaway/benefits/bg.png) right no-repeat;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 16%;
+    width: 338px;
+    height: 462px;
+    background: url(/img/giveaway/benefits/bg-image.png);
+    z-index: 1;
+  }
+
+  // .benefits__logo
+  &__logo {
+  }
+  // .benefits__text
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: "GilroyL";
+    font-size: 147px;
+    color: #f99f32;
+
+    @media (max-width: 1383px) {
+      font-size: 110px;
+    }
+    z-index: 3;
+  }
+
+  // .benefits__action
+  &__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.action-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  z-index: 2;
+  // .action-benefits__items
+  &__items {
+    display: flex;
+    column-gap: 96px;
+    row-gap: 30px;
+  }
+  // .action-benefits__item
+  &__item {
+  }
+}
+.item-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  // .item-benefits__image
+  &__image {
+  }
+  // .item-benefits__title
+  &__title {
+    font-family: "GilroyB";
+    font-size: 24px;
+    color: rgb(30, 44, 58);
+  }
+}
+
+.barber {
+  display: flex;
+  gap: 88px;
+  border-radius: 16px;
+  box-shadow: 0px 3.28px 16.41px 0px rgba(47, 128, 237, 0.2);
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  // .barber__images
+  &__images {
+    flex: 0 1 33%;
+    border-radius: 16px 0 0 16px;
+
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 175px;
+      height: 175px;
+      bottom: calc(50% - 86px);
+      right: -87px;
+      background: url(/img/giveaway/barber-abs.jpeg) center no-repeat;
+      border-radius: 50%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  // .barber__content
+  &__content {
+    padding: 42px 30px;
+  }
+  // .barber__header
+  &__header {
+  }
+  // .barber__body
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.header-barber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  // .header-barber__title
+  &__title {
+    font-family: "GilroyB";
+    font-size: 88px;
+    color: $darkColor;
+  }
+  // .header-barber__logo
+  &__logo {
+  }
+  &:not(:last-child) {
+    padding-bottom: 24px;
+    border-bottom: 2px solid #f99f32;
+  }
+}
+.body-barber {
+  // .body-barber__title
+  &__title {
+    padding-top: 24px;
+    text-align: center;
+    color: $darkColor;
+    font-family: "Marones";
+    font-size: 64px;
+    letter-spacing: 10px;
+  }
+  // .body-barber__actions
+  &__actions {
+  }
+  // .body-barber__join
+  &__join {
+  }
+}
+
+.actions-barber {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+
+  font-size: 15px;
+  font-family: "GilroyB";
+  color: $darkColor;
+
+  // .actions-barber__contacts
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  // .actions-barber__links
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  // .actions-barber__link
+  &__link {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  // .actions-barber__announced
+  &__announced {
+    align-self: flex-end;
+    span {
+      color: $grey;
+    }
+  }
+}
+
+.link-barber {
+  img {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.contact-barber {
+  color: $darkColor;
+  &:hover {
+    transition: all 0.4s;
+    color: #f99f32;
+  }
+  span {
+    color: $grey;
+  }
+}
+
+.join-barber {
+  display: flex;
+  border-radius: 8px;
+  background: rgba(126, 205, 214, 0.3);
+  align-items: center;
+  // .join-barber__text
+  &__text {
+    font-size: 16px;
+    font-family: "GilroyB";
+    color: $darkColor;
+    width: 100%;
+    padding-left: 16px;
+  }
+  // .join-barber__button
+  &__button {
+    transition: all 0.4s ease;
+  }
+}
+
+.winner {
+  padding: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 3.28px 16.41px 0px rgba(47, 128, 237, 0.2);
+  background: rgb(255, 255, 255);
+
+  gap: 30px;
+  display: flex;
+  // .winner__logo
+  &__logo {
+    display: flex;
+  }
+  // .winner__header
+  &__header {
+  }
+  // .winner__content
+  &__content {
+    display: flex;
+    gap: 30px;
+  }
+}
+.logo-winner {
+  // .logo-winner__image
+  &__image {
+  }
+  // .logo-winner__text
+  &__text {
+    font-family: "GilroySb";
+    color: $grey;
+    font-size: 16px;
+  }
+  // .logo-winner__mobile-text
+  &__mobile-text {
+    display: none;
+    font-family: "GilroySb";
+    color: $grey;
+    font-size: 16px;
+    width: 100%;
+  }
+}
+.header-winner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  // .header-winner__title
+  &__title {
+    color: #87a7d5;
+    font-size: 24px;
+    font-family: "Gilroy";
+    margin-left: -50px;
+    letter-spacing: 7px;
+  }
+  // .header-winner__day
+  &__day {
+    color: #f99f32;
+    font-size: 64px;
+    font-family: "GilroyB";
+  }
+}
+
+.content-winner {
+  // .content-winner__image
+  &__image {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      top: 8px;
+      right: 8px;
+      background: url(/img/giveaway/Check.jpeg) center no-repeat;
+      border-radius: 50%;
+    }
+    img {
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+  // .content-winner__body
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  // .content-winner__name
+  &__name {
+    font-family: "GilroyB";
+    font-size: 24px;
+    color: $darkColor;
+    line-height: 130%;
+  }
+  // .content-winner__mail
+  &__mail {
+    font-family: "GilroyM";
+    font-size: 16px;
+    color: $darkColor;
+    line-height: 130%;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  // .content-winner__from
+  &__from {
+    font-family: "GilroyM";
+    font-size: 16px;
+    color: $grey;
+    line-height: 130%;
+  }
+}
+.from-winner {
+  // .from-winner__text
+  &__text {
+  }
+}
+// ===========================================================================================================
+
+.about {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  // .about__container
+  &__container {
+    display: flex;
+    gap: 30px;
+  }
+  // .about__content
+  &__content {
+    flex: 0 1 50%;
+  }
+  // .about__images
+  &__images {
+    align-self: flex-end;
+    flex: 0 1 50%;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+    }
+    &::before {
+      width: 118px;
+      height: 118px;
+      bottom: -49px;
+      left: -33px;
+      background: url(/img/decor/Vector_2.svg) center no-repeat;
+    }
+    &::after {
+      width: 70px;
+      height: 142px;
+      top: -81px;
+      right: 112px;
+      background: url(/img/decor/Ellipse.svg) center no-repeat;
+    }
+  }
+  // .about__image
+  &__image {
+    border-radius: 36px;
+    overflow: hidden;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 64px;
+      top: calc(50% - 32px);
+      background: url(/img/decor/img_decor.svg) center no-repeat;
+    }
+    &::before {
+      transform: rotate(180deg);
+      left: 0;
+    }
+    &::after {
+      right: 0;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}
+.content-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // .content-about__title
+  &__title {
+    font-size: 42px;
+    font-family: "GilroyB";
+    color: $darkColor;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  // .content-about__text
+  &__text {
+    font-family: "GilroyM";
+    font-size: 15px;
+    line-height: 150%;
+    color: #191919;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  // .content-about__mobile
+  &__mobile {
+    display: none;
+  }
+}
+.gray-text {
+  color: #8e87c0;
+}
+// ============================================================================================================
+.partners {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  // .partners__container
+  &__container {
+  }
+  // .partners__body
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+    gap: 30px;
+  }
+  // .partners__item
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    border-radius: 32px;
+    box-shadow: 0px 5px 25px 0px rgba(47, 128, 237, 0.2);
+    transition: all 0.4s ease;
+    &:hover {
+      transform: translateY(-5%);
+      box-shadow: 0px 5px 25px 0px rgba(37, 99, 180, 0.39);
+    }
+  }
+}
+
+.item-partners {
+  // .item-partners__image
+  &__image {
+  }
+  // .item-partners__title
+  &__title {
+    cursor: pointer;
+    font-family: "GilroyB";
+    font-size: 20px;
+    line-height: 130%;
+    color: #191919;
+    transition: all 0.4s ease;
+    &:hover {
+      color: $grey;
+    }
+  }
+}
+
+.partners-two {
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(216, 251, 255, 0),
+    rgb(216, 251, 255) 100%
+  );
+  // .partners-two__container
+  &__container {
+  }
+  // .partners-two__body
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+    }
+    &::before {
+      width: 118px;
+      height: 118px;
+      bottom: -49px;
+      left: -33px;
+      background: url(/img/decor/Vector_2.svg) center no-repeat;
+    }
+    &::after {
+      width: 70px;
+      height: 142px;
+      top: -71px;
+      right: 112px;
+      background: url(/img/decor/Ellipse.svg) center no-repeat;
+    }
+  }
+  // .partners-two__item
+  &__item {
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0px 5px 25px 0px rgba(47, 128, 237, 0.2);
+
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 64px;
+      top: calc(50% - 32px);
+      background: url(/img/decor/img_decor.svg) center no-repeat;
+      z-index: 1;
+    }
+    &::before {
+      transform: rotate(180deg);
+      left: 0;
+    }
+    &::after {
+      right: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 5px 25px 0px rgba(47, 129, 237, 0.425);
+      img {
+        transition: all 0.4s ease;
+        transform: scale(1.05);
+      }
+    }
+  }
+  // .partners-two__image
+  &__image {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+// ============================================================================================================
+
+.influencers {
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  background: linear-gradient(
+    180deg,
+    rgb(216, 251, 255),
+    rgba(216, 251, 255, 0) 100%
+  );
+  // .influencers__container
+  &__container {
+  }
+  // .influencers__body
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+    gap: 30px;
+
+    position: relative;
+    z-index: 1;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+    }
+    &::before {
+      width: 124px;
+      height: 118px;
+      bottom: 25px;
+      left: -62px;
+      background: url(/img/decor/star.svg) center no-repeat;
+    }
+    &::after {
+      width: 304px;
+      height: 35px;
+      top: -16px;
+      right: 14%;
+      background: url(/img/decor/Vector.svg) center no-repeat;
+      transform: rotate(151deg);
+    }
+  }
+  // .influencers__item
+  &__item {
+  }
+}
+.item-influencers {
+  padding: 30px 20px;
+  display: grid;
+  gap: 24px;
+  justify-items: center;
+  text-align: center;
+
+  box-shadow: 0px 5px 25px 0px rgba(47, 128, 237, 0.2);
+  background-color: $white;
+  border-radius: 16px;
+  // .item-influencers__image
+  &__image {
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    max-width: 132px;
+    max-height: 132px;
+    border: 4px solid $white;
+    transition: all 0.3s ease;
+    img {
+      max-width: 100%;
+    }
+    &:hover {
+      transition: all 0.3s ease;
+      border: 4px solid #f99f32;
+    }
+  }
+  // .item-influencers__title
+  &__title {
+    font-family: "GilroyB";
+    font-size: 24px;
+    line-height: 130%;
+    color: #191919;
+  }
+  // .item-influencers__text
+  &__text {
+    font-family: "GilroyM";
+    font-size: 15px;
+    line-height: 150%;
+    color: #191919;
+    span {
+      text-decoration: underline;
+    }
+  }
+  // .item-influencers__social
+  &__social {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  // .item-influencers__link
+  &__link {
+    border-radius: 50%;
+    border: 2px solid $white;
+    transition: all 0.2s ease;
+    &:hover {
+      transition: all 0.2s ease;
+      border: 2px solid #f99f32;
+    }
+  }
+}
+
+// ============================================================================================================
+.etntrepreneurs {
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(239, 237, 255, 0),
+    rgb(239, 237, 255) 100%
+  );
+  // .etntrepreneurs__container
+  &__container {
+  }
+  // .etntrepreneurs__body
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    position: relative;
+    z-index: 1;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+    }
+    &::before {
+      width: 118px;
+      height: 118px;
+      bottom: 30px;
+      left: -50px;
+      background: url(/img/decor/Vector_2.svg) center no-repeat;
+    }
+    &::after {
+      width: 70px;
+      height: 142px;
+      top: -71px;
+      right: 112px;
+      background: url(/img/decor/Ellipse.svg) center no-repeat;
+    }
+  }
+  // .etntrepreneurs__item
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  // .etntrepreneurs__image
+  &__image {
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0px 5px 25px 0px rgba(47, 128, 237, 0.2);
+
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 64px;
+      top: calc(50% - 32px);
+      background: url(/img/decor/img_decor.svg) center no-repeat;
+      z-index: 1;
+    }
+    &::before {
+      transform: rotate(180deg);
+      left: 0;
+    }
+    &::after {
+      right: 0;
+    }
+    &:hover {
+      img {
+        transition: all 0.4s;
+        transform: scale(1.05);
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+  // .etntrepreneurs__text
+  &__text {
+    font-family: "GilroyB";
+    font-size: 24px;
+    line-height: 130%;
+    a {
+      color: #191919;
+    }
+    &:hover {
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+// ============================================================================================================
+.membership {
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(216, 251, 255, 0),
+    rgb(216, 251, 255) 100%
+  );
+  // .membership__container
+  &__container {
+  }
+  // .membership__body
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+    gap: 30px;
+
+    position: relative;
+    z-index: 1;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+    }
+    &::before {
+      width: 118px;
+      height: 118px;
+      bottom: -59px;
+      right: -59px;
+      background: url(/img/decor/Vector_2.svg) center no-repeat;
+    }
+    &::after {
+      width: 70px;
+      height: 142px;
+      left: -26px;
+      top: -26px;
+      background: url(/img/decor/Ellipse.svg) center no-repeat;
+    }
+  }
+  // .membership__item
+  &__item {
+  }
+
+  &__under {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: "GilroySb";
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: $grey;
+    p {
+      max-width: 678px;
+    }
+  }
+}
+.item-membership {
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0px 5px 25px 0px rgba(47, 128, 237, 0.2);
+  background: $white;
+  min-height: 538px;
+
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s;
+
+  &:hover {
+    transition: all 0.4s ease;
+    background: linear-gradient(
+      270deg,
+      rgb(249, 159, 50) -2.902%,
+      rgb(243, 129, 125) 100.397%
+    );
+    .item-membership__text,
+    .item-membership__list,
+    .item-membership__price,
+    .item-membership__title {
+      color: $white;
+      transition: all 0.3s;
+    }
+  }
+
+  // .item-membership__title
+  &__title {
+    color: $darkColor;
+    font-family: "GilroyB";
+    font-size: 22px;
+    line-height: 130%;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  // .item-membership__price
+  &__price {
+    color: $darkColor;
+    font-family: "GilroyB";
+    font-size: 64px;
+    line-height: 130%;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  // .item-membership__advantages
+  &__advantages {
+    flex: 0 1 100%;
+    padding-left: 26px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  // .item-membership__lists
+  &__lists {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  // .item-membership__list
+  &__list {
+    list-style-type: disc;
+
+    color: $grey;
+    font-family: "GilroySb";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  // .item-membership__cityzen
+  &__cityzen {
+  }
+  // .item-membership__text
+  &__text {
+    color: $grey;
+    font-family: "GilroySb";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &:nth-child(1) {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 3px;
+        left: -20px;
+        background: url(/img/decor/green_confirm.svg) center no-repeat;
+      }
+    }
+    &:nth-child(2) {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 3px;
+        left: -20px;
+        background: url(/img/decor/orange_confirm.svg) center no-repeat;
+      }
+    }
+  }
+  // .item-membership__button
+  &__button {
+  }
+}
+.button {
+  // .button--white
+  &--white {
+  }
+}
+
+// ============================================================================================================
+@import "footer";
+
+@import "tabs";
+// Media
+@import "media";

@@ -1,0 +1,55 @@
+.spoillers {
+  display: grid;
+  gap: 15px;
+}
+
+.spoillers__item {
+  font-size: 20px;
+}
+
+.spoillers__title {
+  width: 100%;
+  cursor: default;
+  text-align: left;
+  border: 1px solid #eee;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: relative;
+  list-style: none;
+  &::maker {
+  }
+  ._spoillers-init {
+    cursor: pointer;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      background-color: #000;
+      height: 2px;
+      width: 12px;
+      transition: transform 0.5s ease 0s;
+    }
+    &::before {
+      transform: translate(-75%, -50%) rotate(40deg);
+    }
+    &::after {
+      transform: translate(0, -50%) rotate(-40deg);
+    }
+    &._spoillers-active {
+      &::before {
+        transform: translate(-75%) rotate(-40deg);
+      }
+      &::before {
+        transform: rotate(-40deg);
+      }
+    }
+  }
+}
+
+.spoillers__body {
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}

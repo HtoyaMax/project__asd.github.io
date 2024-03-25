@@ -1,0 +1,80 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  font-family: "GilroySb";
+  transition: all 0.4s ease;
+  font-size: 16px;
+  padding: 18px 30px;
+  border-radius: 8px;
+  min-height: 50px;
+  border: 1px solid #f99f32;
+
+  color: #f1f1f1;
+  background: linear-gradient(
+    270deg,
+    rgb(249, 159, 50) -2.902%,
+    rgb(243, 129, 125) 100.397%
+  );
+
+  white-space: nowrap;
+
+  &:hover {
+    transition: all 0.4s ease;
+    background: linear-gradient(
+      180deg,
+      rgb(255, 255, 255),
+      rgb(235, 235, 235) 100%
+    );
+    color: #f99f32;
+  }
+
+  // .button__join
+  &__join {
+    // .button__join--web
+    &--web {
+      // max-width: 112px;
+    }
+    // .button-join--mob
+    &--mob {
+      // max-width: 112px;
+    }
+  }
+
+  &--icon {
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 16px;
+      gap: 16px;
+      &::after {
+        content: "";
+      }
+    }
+  }
+  &--white {
+    display: inline-block;
+    padding: 16px 10px;
+    border-radius: 9px;
+    border: 1px solid #f99f32;
+    background-color: $white;
+    color: #f99f32;
+    text-align: center;
+    font-family: "GilroySb";
+    font-size: 16px;
+    transition: all 0.4s;
+    &:hover {
+      color: #f1f1f1;
+      background: linear-gradient(
+        270deg,
+        rgb(249, 159, 50) -2.902%,
+        rgb(243, 129, 125) 100.397%
+      );
+    }
+  }
+}
+
+.button__join--mob {
+  display: none;
+}

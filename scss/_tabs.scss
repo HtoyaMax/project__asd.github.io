@@ -1,0 +1,227 @@
+.gallery {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  // .gallery__container
+  &__container {
+  }
+  // .gallery__body
+  &__body {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 74.458874% 1fr;
+  }
+  // .gallery__content
+  &__content {
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+    }
+    &::before {
+      width: 118px;
+      height: 118px;
+      bottom: -49px;
+      left: 10%;
+      background: url(/img/decor/Vector_2.svg) center no-repeat;
+    }
+    &::after {
+      width: 70px;
+      height: 142px;
+      top: -60px;
+      right: 10%;
+      background: url(/img/decor/Ellipse.svg) center no-repeat;
+    }
+  }
+  // .gallery__slider
+  &__slider {
+  }
+  // .gallery__wrapper
+  &__wrapper {
+  }
+
+  // .gallery__slide
+  &__slide {
+    img {
+      max-width: 100%;
+      min-height: 345px;
+      object-fit: cover;
+    }
+  }
+  // .gallery__arrow
+  &__arrow {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 50%;
+    background: $white url("/img/decor/arrow.svg") center no-repeat;
+    transition: 0.5s;
+    z-index: 2;
+    // .gallery__arrow--left
+    &--left {
+      left: 32px;
+    }
+    // .gallery__arrow--right
+    &--right {
+      right: 32px;
+      transform: translate(0, -50%) rotate(-180deg);
+    }
+    &:hover {
+      background: #ffffffce url("/img/decor/arrow.svg") center no-repeat;
+    }
+  }
+  // .gallery__navigation
+  &__navigation {
+  }
+}
+
+.swiper-button-disabled {
+  background: #ffffff81 url("/img/decor/arrow.svg") center no-repeat;
+  cursor: default;
+  pointer-events: none;
+}
+
+.swiper-slide__image {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 64px;
+    top: calc(50% - 32px);
+    background: url(/img/decor/img_decor.svg) center no-repeat;
+    z-index: 1;
+  }
+  &::before {
+    transform: rotate(180deg);
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+}
+
+.content-gallery {
+  // .content-gallery__body
+  &__body {
+    min-height: 345px;
+    display: none;
+    &:first-child {
+      display: block;
+    }
+    .tab-active {
+      display: block;
+    }
+  }
+}
+.navigation-gallery {
+  display: grid;
+  gap: 30px;
+
+  // .navigation-gallery__title
+  &__title {
+    background: none;
+    position: relative;
+    border-radius: 32px;
+    overflow: hidden;
+    span {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      padding: 20px 30px;
+      transition: all 0.3s ease;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 64px;
+        top: calc(50% - 32px);
+        background: url(/img/decor/img_decor.svg) center no-repeat;
+      }
+      &::before {
+        transform: rotate(180deg);
+        left: 0;
+      }
+      &::after {
+        right: 0;
+      }
+    }
+    img {
+      max-width: 100%;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      span {
+        background: rgba(0, 0, 0, 0);
+      }
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+  // .navigation-gallery__text
+  &__text {
+    color: $white;
+    font-family: "GilroyB";
+    font-size: 20px;
+    line-height: 130%;
+  }
+}
+
+@media (max-width: $tablet) {
+  .gallery__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(290px, 345px));
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $mobileSmall) {
+  .gallery__content {
+    &::before {
+      display: none;
+    }
+    &::after {
+      width: 70px;
+      height: 142px;
+      top: -60px;
+      right: 10%;
+      background: url(/img/decor/Ellipse.svg) center no-repeat;
+    }
+  }
+  .navigation-gallery {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 118px;
+      height: 118px;
+      bottom: -49px;
+      left: -10px;
+      background: url(/img/decor/Vector_2.svg) center no-repeat;
+    }
+  }
+}

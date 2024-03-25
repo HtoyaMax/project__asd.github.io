@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__menu menu">
+                    <a href="#" class="header__logo"><img src="img/Logo.svg" alt="logo"></a>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">About us</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Gallery</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Partners</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Giveaways</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Community calendar</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Influencers</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Entrepreneurs</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Membership plans</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="open-menu__body open-menu">
+                        <div class="open-menu__container">
+                            <div class="open-menu__columns">
+                                <div class="open-menu__column">
+                                    <ul class="open-menu__item"><a href="#" class="open-menu__link">Home</a></ul>
+                                    <ul class="open-menu__item"><a href="#" class="open-menu__link">About us</a></ul>
+                                    <ul class="open-menu__item"><a href="#" class="open-menu__link">Gallery</a></ul>
+                                    <ul class="open-menu__item"><a href="#" class="open-menu__link">Contacts</a></ul>
+                                    <a href="#popup1" class="button__join--web button popup-link">Join us</a>
+                                </div>
+                                <div class="open-menu__column">
+                                    <ul class="open-menu__item"><a href="#" class="open-menu__link">Services</a>
+                                        <li class="open-menu__item-link"><a href="#"
+                                                class="open-menu__link--small">Rental housing</a>
+                                        </li>
+                                        <li class="open-menu__item-link"><a href="#"
+                                                class="open-menu__link--small">Work</a>
+                                        </li>
+                                        <li class="open-menu__item-link"><a href="#"
+                                                class="open-menu__link--small">Services</a>
+                                        </li>
+                                        <li class="open-menu__item-link"><a href="#"
+                                                class="open-menu__link--small">Community</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="open-menu__item"><a href="#" class="open-menu__link">Giveaways</a></ul>
+                                    <ul class="open-menu__item"><a href="#" class="open-menu__link">Community
+                                            calendar</a></ul>
+                                </div>
+                                <div class="open-menu__column">
+                                    <ul class="open-menu__item"><a href="#" class="open-menu__link">Influencers</a></ul>
+                                    <ul class="open-menu__item"><a href="#" class="open-menu__link">Partners</a>
+                                        <li class="open-menu__item-link"><a href="#"
+                                                class="open-menu__link--small">Highlands</a>
+                                        </li>
+                                        <li class="open-menu__item-link"><a href="#"
+                                                class="open-menu__link--small">Health Center</a>
+                                        </li>
+                                        <li class="open-menu__item-link"><a href="#"
+                                                class="open-menu__link--small">Afisha Media</a>
+                                        </li>
+                                        <li class="open-menu__item-link"><a href="#"
+                                                class="open-menu__link--small">Future Honda</a>
+                                        </li>
+                                        <li class="open-menu__item-link"><a href="#"
+                                                class="open-menu__link--small">Maita Mazda</a>
+                                        </li>
+                                        <li class="open-menu__item-link"><a href="#"
+                                                class="open-menu__link--small">Citrus Plaza</a>
+                                        </li>
+                                        <li class="open-menu__item-link"><a href="#" class="open-menu__link--small">Team
+                                                Diesel</a>
+                                        </li>
+                                        <li class="open-menu__item-link"><a href="#"
+                                                class="open-menu__link--small">Ashton & Price</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="open-menu__column">
+                                    <ul class="open-menu__item"><a href="#" class="open-menu__link">Entrepreneurs</a>
+                                        <li class="open-menu__item-link"><a href="#"
+                                                class="open-menu__link--small">Monthly meetups</a>
+                                        </li>
+                                        <li class="open-menu__item-link"><a href="#" class="open-menu__link--small">Real
+                                                estate meetups</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="open-menu__item"><a href="#" class="open-menu__link">Membership plans</a>
+                                    </ul>
+                                    <a href="#popup1" class="button__join--mob button popup-link">Join us</a>
+                                </div>
+                            </div>
+                            <div class="open-menu__content menu-content">
+                                <div class="menu-content__item">
+                                    <a class="image-ibg" href="#"><img src="img/header/01.png" alt="image"></a>
+                                    <a href="#" class="menu-content__category">Monthly meetups</a>
+                                </div>
+                                <div class="menu-content__item">
+                                    <a class="image-ibg" href="#"><img src="img/header/02.png" alt="image"></a>
+                                    <a href="#" class="menu-content__category">Real estate meetups</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="menu__action">
+                        <a href="#popup1" class="button__join--header button popup-link">Join us</a>
+                        <div class="menu__action-btn">
+                            <button class="menu__icon icon-menu"><span></span>
+                                <p class="menu__action--text">Menu</p>
+                                <p class="menu__action--text-close">Close</p>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup" id="popup1">
+                    <div class="popup__container-big">
+                        <div class="popup__close">
+                            <a class="close-popup"><span></span>
+                                <p>Close</p>
+                            </a>
+                        </div>
+                        <div class="popup__body">
+
+                            <div class="popup__content">
+                                <div class="popup__title">Join us</div>
+                                <form action="#" class="popup__form">
+                                    <div class="form-item">
+                                        <label for="membershipplan">Membership plan</label>
+                                        <select name="membershipplan">
+                                            <option value="insider">Insider</option>
+                                            <option value="outsider">Outsider</option>
+                                            <option value="grandmasterbit">Grandmasterbit</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="firstname">First name</label>
+                                        <input type="text" id="firstname" name="firstname" class="form-item__firstname"
+                                            required>
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="lastname">Larst name</label>
+                                        <input type="text" id="lastname" name="lastname" class="form-item__lastname"
+                                            required>
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="emailaddress">Email address</label>
+                                        <input type="text" id="emailaddress" name="emailaddress"
+                                            class="form-item__email" required>
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="мobilephone">Mobile phone</label>
+                                        <input type="text" id="мobilephone" name="мobilephone" class="form-item__phone"
+                                            required>
+                                    </div>
+                                    <div class="form-item form-item__message">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" id="message" class="form-item__textarea"></textarea>
+                                    </div>
+
+                                </form>
+                                <button class="send-button button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup" id="popup2">
+                    <div class="popup__container-big">
+                        <div class="popup__close">
+                            <a class="close-popup"><span></span>
+                                <p>Close</p>
+                            </a>
+                        </div>
+                        <div class="popup__body">
+
+                            <div class="popup__content">
+                                <div class="popup__title">Join us</div>
+                                <div class="popup__video">
+
+                                    <iframe src="https://www.youtube.com/embed/EgkEjCcvkS8" frameborder="0"
+                                        allowfullscreen></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <div class="hero__block-header hero-header">
+                            <h1 class="hero-header__title">
+                                Welcome to the
+                                <span>City of Goodness</span>
+                            </h1>
+                            <div class="hero-header__text">
+                                <p>a place where people thrive</p>
+                            </div>
+                            <a href="#popup1" class="hero-header__button button popup-link">Join us</a>
+                        </div>
+                    </div>
+                    <div class="hero__popup">
+                        <a href="#popup2" class="hero-play popup-link popup-link"></a>
+                    </div>
+                </div>
+                <video id="video" src="img/hero/videoplayback.mp4" muted loop autoplay></video>
+
+
+            </section>
+            <section class="services">
+                <div class="services__container">
+                    <div class="block-header block-header--center">
+                        <h2 class="block-header__title"><span class="block-header__decor">O</span>ur services</h2>
+                    </div>
+                    <div class="services__body">
+                        <div class="services__item item-services">
+                            <div class="item-services__icon">
+                                <img src="img/services/01.jpeg" alt="image">
+                            </div>
+                            <h4 class="item-services__title">
+                                Rental housing
+                            </h4>
+                            <div class="item-services__text">
+                                <p>Find the perfect accommodation with our rental service. A wide selection from
+                                    verified landlords, convenient filters, and secure payments.</p>
+                            </div>
+                        </div>
+                        <div class="services__item item-services">
+                            <div class="item-services__icon">
+                                <img src="img/services/02.jpeg" alt="image">
+                            </div>
+                            <h4 class="item-services__title">
+                                Work
+                            </h4>
+                            <div class="item-services__text">
+                                <p>Hire the best employees or find your perfect job opening. Convenient search and
+                                    recommendation tools for successful employment.</p>
+                            </div>
+                        </div>
+                        <div class="services__item item-services">
+                            <div class="item-services__icon">
+                                <img src="img/services/03.jpeg" alt="image">
+                            </div>
+                            <h4 class="item-services__title">
+                                Services
+                            </h4>
+                            <div class="item-services__text">
+                                <p>Get quality services from trusted professionals. Easy search and honest reviews
+                                    ensure safe transactions.</p>
+                            </div>
+                        </div>
+                        <div class="services__item item-services">
+                            <div class="item-services__icon">
+                                <img src="img/services/04.jpeg" alt="image">
+                            </div>
+                            <h4 class="item-services__title">
+                                Community
+                            </h4>
+                            <div class="item-services__text">
+                                <p>Connect with like-minded people, make new friends and participate in interesting
+                                    events. Create your own community on our platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="giveaway">
+                <div class="giveaway__container">
+                    <div class="giveaway__benefits benefits">
+                        <div class="benefits__logo"><img src="img/giveaway/benefits/Logo.svg" alt="logo"></div>
+                        <div class="benefits__text">
+                            <p>B</p>
+                            <p>E</p>
+                            <p>N</p>
+                            <p>E</p>
+                            <p>F</p>
+                            <p>I</p>
+                            <p>T</p>
+                            <p>S</p>
+                        </div>
+                        <div class="benefits__action action-benefits">
+                            <div class="action-benefits__items">
+                                <div class="action-benefits__item item-benefits">
+                                    <div class="item-benefits__image"><img src="img/giveaway/benefits/01.svg"
+                                            alt="image"></div>
+                                    <h4 class="item-benefits__title">Resources</h4>
+                                </div>
+                                <div class="action-benefits__item item-benefits">
+                                    <div class="item-benefits__image"><img src="img/giveaway/benefits/02.svg"
+                                            alt="image"></div>
+                                    <h4 class="item-benefits__title">Giveaweys</h4>
+                                </div>
+                                <div class="action-benefits__item item-benefits">
+                                    <div class="item-benefits__image"><img src="img/giveaway/benefits/03.svg"
+                                            alt="image"></div>
+                                    <h4 class="item-benefits__title">Deals</h4>
+                                </div>
+                                <div class="action-benefits__item item-benefits">
+                                    <div class="item-benefits__image"><img src="img/giveaway/benefits/04.svg"
+                                            alt="image"></div>
+                                    <h4 class="item-benefits__title">Calendar</h4>
+                                </div>
+                            </div>
+
+                            <a href="#popup1" class="action-giveaway__link button popup-link">
+                                Join now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="giveaway__block-header block-header">
+                        <h2 class="block-header__title"><span class="block-header__decor">G</span>iveaways</h2>
+                    </div>
+                    <div class="giveaway__barber barber">
+                        <div class="barber__images">
+                            <img src="img/giveaway/barder.jpeg" alt="image">
+                        </div>
+                        <div class="barber__content">
+                            <div class="barber__header header-barber">
+                                <div class="header-barber__title">GIVEAWAY</div>
+                                <div class="header-barber__logo"><img src="img/Logo.svg" alt="logo"></div>
+                            </div>
+                            <div class="barber__body body-barber">
+                                <div class="body-barber__title">BARBER SHOP SERVICE</div>
+                                <div class="body-barber__actions actions-barber">
+                                    <div class="actions-barber__contacts">
+                                        <a href="#" class="contact-barber"><span>Business:</span>Karman The Barber</a>
+                                        <a href="#" class="contact-barber"><span>Website:</span>karmabthebarber.com</a>
+                                        <a href="tel:9169807616"
+                                            class="contact-barber"><span>Contact:</span>916-980-7616</a>
+                                    </div>
+                                    <div class="actions-barber__links">
+                                        <div class="actions-barber__link">
+                                            <a href="#" class="link-barber"><img src="img/socials/Instagram.svg"
+                                                    alt="Instagram"></a>
+                                            <a href="#" class="link-barber"><img src="img/socials/Facebook.svg"
+                                                    alt="Facebook"></a>
+                                            <a href="#" class="link-barber"><img src="img/socials/Twitter.svg"
+                                                    alt="Twitter"></a>
+                                            <a href="#" class="link-barber"><img src="img/socials/YouTube.svg"
+                                                    alt="YouTube"></a>
+                                            <a href="#" class="link-barber"><img src="img/socials/Telegram.svg"
+                                                    alt="Telegram"></a>
+                                            <a href="#" class="link-barber"><img src="img/socials/TikTok.svg"
+                                                    alt="TikTok"></a>
+                                        </div>
+                                        <div class="actions-barber__announced">
+                                            <p><span>Winner announced in: 03.16.14</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="body-barber__join join-barber">
+                                    <div class="join-barber__text">
+                                        <p>All Citizens Participate in giveaways</p>
+                                    </div>
+                                    <a href="#popup1" class=" join-barber__button button popup-link">Join now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="giveaway__winner winner">
+                        <div class="winner__logo ">
+                            <div class="logo-winner">
+                                <img src="img/giveaway/Logo.jpeg" alt="logo" class="logo-winner__image">
+                                <div class="logo-winner__text">
+                                    <p>Giveaway #: 240229</p>
+                                </div>
+                            </div>
+
+                            <div class="winner__header header-winner">
+                                <h4 class="header-winner__title">CITY OF GOODNESS DAYLY GIVEAWAYS</h4>
+                                <h2 class="header-winner__day">Winner of the day!</h2>
+                            </div>
+                            <div class="logo-winner__mobile-text">
+                                <p>Giveaway #: 240229</p>
+                            </div>
+                        </div>
+                        <div class="winner__content content-winner">
+                            <div class="content-winner__image"><img src="img/giveaway/winner.jpeg" alt="image"></div>
+                            <div class="content-winner__body">
+                                <div class="content-winner__name">Nick Lishchenko</div>
+                                <a href="#" class="content-winner__mail">@nick.lishchenko</a>
+                                <div class="content-winner__from from-winner">
+                                    <div class="from-winner__text">
+                                        <p>citizen #00007</p>
+                                    </div>
+                                    <div class="from-winner__text">
+                                        <p>since 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="about__container">
+                    <div class="about__content content-about">
+                        <h4 class="content-about__title"><span class="block-header__decor">A</span>bout us</h4>
+                        <div class="content-about__text">
+                            <p>Welcome to the City of Goodness, a vibrant community where newcomers receive support,
+                                locals participate in events, and businesses flourish. More than just a platform, it is
+                                a central hub that connects residents, organizations, and businesses. Join us as we
+                                explore this unique space that fosters connections and opportunities for all.</p>
+                            <p>In the City of Goodness, local businesses can showcase their offerings, engage in events,
+                                and contribute to the community through giveaways and services. Residents and visitors
+                                can access essential resources such as rental properties, job listings, and services
+                                provided by local businesses. Non-profit organizations have the chance to highlight
+                                resources for those in need, while churches can offer support through social activities
+                                organized by the City of Goodness. Let's collectively promote goodness in our city.</p>
+                        </div>
+                        <h4 class="content-about__title gray-text">Our mission</h4>
+                        <div class="content-about__text ">
+                            <p>We inspire residents, organizations, and businesses to spread goodness throughout the
+                                city.</p>
+                        </div>
+                    </div>
+                    <div class="content-about__mobile">
+                        <h4 class="content-about__title">Who we are</h4>
+                        <div class="content-about__text">
+                            <p>Welcome to the City of Goodness, a vibrant community where newcomers receive support,
+                                locals participate in events, and businesses flourish. More than just a platform, it is
+                                a central hub that connects residents, organizations, and businesses. Join us as we
+                                explore this unique space that fosters connections and opportunities for all.</p>
+                        </div>
+                        <h4 class="content-about__title">Our mission</h4>
+                        <div class="content-about__text">
+                            <p>Welcome to the City of Goodness, a vibrant community where newcomers receive support,
+                                locals participate in events, and businesses flourish. More than just a platform, it is
+                                a central hub that connects residents, organizations, and businesses. Join us as we
+                                explore this unique space that fosters connections and opportunities for all.</p>
+                        </div>
+                    </div>
+                    <div class="about__images">
+                        <div class="about__image">
+                            <img src="img/about/01.jpeg" alt="iamge">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery">
+                <div class="gallery__container">
+                    <div class="block-header">
+                        <h2 class="block-header__title"><span class="block-header__decor">P</span>hoto Gallery</h2>
+                    </div>
+                    <div class="gallery__body">
+                        <div class="gallery__content content-gallery">
+                            <div class="content-gallery__body ">
+                                <div class="gallery__slider swiper">
+                                    <div class="gallery__wrapper swiper-wrapper">
+                                        <div class="gallery__slide swiper-slide">
+                                            <div class="swiper-slide__image">
+                                                <img src="img/gallery/slider-image.jpeg" alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="gallery__slide swiper-slide">
+                                            <div class="swiper-slide__image">
+                                                <img src="img/gallery/slider-image.jpeg" alt="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-gallery__body ">
+                                <div class="gallery__slider swiper">
+                                    <div class="gallery__wrapper swiper-wrapper">
+                                        <div class="gallery__slide swiper-slide">
+                                            <div class="swiper-slide__image">
+                                                <img src="img/gallery/slider-image.jpeg" alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="gallery__slide swiper-slide">
+                                            <div class="swiper-slide__image">
+                                                <img src="img/gallery/slider-image.jpeg" alt="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-gallery__body ">
+                                <div class="gallery__slider swiper">
+                                    <div class="gallery__wrapper swiper-wrapper">
+                                        <div class="gallery__slide swiper-slide">
+                                            <div class="swiper-slide__image">
+                                                <img src="img/gallery/slider-image.jpeg" alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="gallery__slide swiper-slide">
+                                            <div class="swiper-slide__image">
+                                                <img src="img/gallery/slider-image.jpeg" alt="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="gallery__arrow gallery__arrow--left" type="button"></button>
+                            <button class="gallery__arrow gallery__arrow--right" type="button"></button>
+                        </div>
+                        <nav class="gallery__navigation navigation-gallery">
+                            <button class="navigation-gallery__title tab-active" type="button">
+                                <img src="img/gallery/01.jpeg" alt="iamge">
+                                <span class="navigation-gallery__text">ParaSOLka</span>
+                            </button>
+                            <button class="navigation-gallery__title tab-active" type="button">
+                                <img src="img/gallery/02.jpeg" alt="iamge">
+                                <span class="navigation-gallery__text">Weekend in Northern California</span>
+                            </button>
+                            <button class="navigation-gallery__title tab-active" type="button">
+                                <img src="img/gallery/03.jpeg" alt="iamge">
+                                <span class="navigation-gallery__text">SACRAMENTO’S FARM-TO-FORK FESTIVAL RETURNS FOR
+                                    2023</span>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <section class="partners">
+                <div class="partners__container">
+                    <div class="block-header">
+                        <h2 class="block-header__title"><span class="block-header__decor">P</span>artners</h2>
+                    </div>
+                    <div class="partners__body">
+                        <div class="partners__item item-partners">
+                            <div class="item-partners__image"><a href="#"><img src="img/partners/01.jpeg"
+                                        alt="image"></a></div>
+                            <a href="#">
+                                <h4 class="item-partners__title">Highlands</h4>
+                            </a>
+                        </div>
+                        <div class="partners__item item-partners">
+                            <div class="item-partners__image"><a href="#"><img src="img/partners/02.jpeg"
+                                        alt="image"></a></div>
+                            <a href="#">
+                                <h4 class="item-partners__title">Health Center</h4>
+                            </a>
+                        </div>
+                        <div class="partners__item item-partners">
+                            <div class="item-partners__image"><a href="#"><img src="img/partners/03.jpeg"
+                                        alt="image"></a></div>
+                            <a href="#">
+                                <h4 class="item-partners__title">Afisha Media</h4>
+                            </a>
+                        </div>
+                        <div class="partners__item item-partners">
+                            <div class="item-partners__image"><a href="#"><img src="img/partners/04.jpeg"
+                                        alt="image"></a></div>
+                            <a href="#">
+                                <h4 class="item-partners__title">Future Honda</h4>
+                            </a>
+                        </div>
+                        <div class="partners__item item-partners">
+                            <div class="item-partners__image"><a href="#"><img src="img/partners/05.jpeg"
+                                        alt="image"></a></div>
+                            <a href="#">
+                                <h4 class="item-partners__title">Maita Mazda</h4>
+                            </a>
+                        </div>
+                        <div class="partners__item item-partners">
+                            <div class="item-partners__image"><a href="#"><img src="img/partners/06.jpeg"
+                                        alt="image"></a></div>
+                            <a href="#">
+                                <h4 class="item-partners__title">Citrus Plaza</h4>
+                            </a>
+                        </div>
+                        <div class="partners__item item-partners">
+                            <div class="item-partners__image"><a href="#"><img src="img/partners/07.jpeg"
+                                        alt="image"></a></div>
+                            <a href="#">
+                                <h4 class="item-partners__title">Team Diesel</h4>
+                            </a>
+                        </div>
+                        <div class="partners__item item-partners">
+                            <div class="item-partners__image"><a href="#"><img src="img/partners/08.jpeg"
+                                        alt="image"></a></div>
+                            <a href="#">
+                                <h4 class="item-partners__title">Ashton & Price</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="partners-two">
+                <div class="partners-two__container">
+                    <div class="partners-two__body">
+                        <div class="partners-two__item">
+                            <a href="#" class="partners-two__image"><img src="img/partners/two/01.jpeg" alt="image"></a>
+                        </div>
+                        <div class="partners-two__item">
+                            <a href="#" class="partners-two__image"><img src="img/partners/two/02.jpeg" alt="image"></a>
+                        </div>
+                        <div class="partners-two__item">
+                            <a href="#" class="partners-two__image"><img src="img/partners/two/03.jpeg" alt="image"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="influencers">
+                <div class="influencers__container">
+                    <div class="block-header">
+                        <h2 class="block-header__title"><span class="block-header__decor">I</span>nfluencers</h2>
+                    </div>
+                    <div class="influencers__body">
+                        <div class="influencers__item item-influencers">
+                            <a href="#" class="item-influencers__image">
+                                <img src="img/influensers/01.jpeg" alt="image">
+                            </a>
+                            <h4 class="item-influencers__title">Ilya Korefan</h4>
+                            <div class="item-influencers__text">
+                                <p>Friend • YouTuber • MC • my Girl: @annArtman
+                                </p>
+                                <p>youtube.com/@koryfan?si=H6Y_FbwlqcQBNbC8</p>
+                            </div>
+                            <div class="item-influencers__social">
+                                <a href="#" class="item-influencers__link"><img src="img/socials/YouTube.svg"
+                                        alt="YouTube"></a>
+                                <a href="#" class="item-influencers__link"><img src="img/socials/Instagram.svg"
+                                        alt="Instagram"></a>
+                            </div>
+                        </div>
+                        <div class="influencers__item item-influencers">
+                            <a href="#" class="item-influencers__image">
+                                <img src="img/influensers/02.jpeg" alt="image">
+                            </a>
+                            <h4 class="item-influencers__title">Svitlana Iotko</h4>
+                            <div class="item-influencers__text">
+                                <p>TV, Radio, Event Hostкурс</p>
+                                <p>#<span>розмовляйгарно</span> #<span>говорикрасиво</span></p>
+                                <p>radio show @<span>good_evening_ua interviews</span></p>
+                                <p>@tv.<span>beautiful.peoplesupport</span> Ukraine</p>
+                            </div>
+                            <div class="item-influencers__social">
+                                <a href="#" class="item-influencers__link"><img src="img/socials/YouTube.svg"
+                                        alt="YouTube"></a>
+                                <a href="#" class="item-influencers__link"><img src="img/socials/Instagram.svg"
+                                        alt="Instagram"></a>
+                            </div>
+                        </div>
+                        <div class="influencers__item item-influencers">
+                            <a href="#" class="item-influencers__image">
+                                <img src="img/influensers/03.jpeg" alt="image">
+                            </a>
+                            <h4 class="item-influencers__title">Maxim_3bro</h4>
+                            <div class="item-influencers__text">
+                                <p>Blogger</p>
+                                <p>YouTube 3BRO</p>
+                                <p>Co-Founder @<span>usa_car_planet_llc</span></p>
+                                <p>Co-Founder @<span>garagemanstore</span></p>
+                            </div>
+                            <div class="item-influencers__social">
+                                <a href="#" class="item-influencers__link"><img src="img/socials/YouTube.svg"
+                                        alt="YouTube"></a>
+                                <a href="#" class="item-influencers__link"><img src="img/socials/Instagram.svg"
+                                        alt="Instagram"></a>
+                            </div>
+                        </div>
+                        <div class="influencers__item item-influencers">
+                            <a href="#" class="item-influencers__image">
+                                <img src="img/influensers/04.jpeg" alt="image">
+                            </a>
+                            <h4 class="item-influencers__title">The_mosk.wins</h4>
+                            <div class="item-influencers__text">
+                                <p>Blogger</p>
+                                <p>🤪Сногсшибательные перемены Из Сибири в США</p>
+                                <p>🤩Показываем нашу американскую жизнь</p>
+                                <p>👨‍👩‍👧‍👦Ютубанутая семейка</p>
+                            </div>
+                            <div class="item-influencers__social">
+                                <a href="#" class="item-influencers__link"><img src="img/socials/Instagram.svg"
+                                        alt="Instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="etntrepreneurs">
+                <div class="etntrepreneurs__container">
+                    <div class="block-header">
+                        <h2 class="block-header__title"><span class="block-header__decor">E</span>tntrepreneurs</h2>
+                    </div>
+                    <div class="etntrepreneurs__body">
+                        <div class="etntrepreneurs__item">
+                            <div class="etntrepreneurs__image"><a href="#"><img src="img/enterpreneurs/01.jpeg"
+                                        alt="image"></a></div>
+                            <div class="etntrepreneurs__text">
+                                <a href="#">Real estate meetups</a>
+                            </div>
+                        </div>
+                        <div class="etntrepreneurs__item">
+                            <div class="etntrepreneurs__image"><a href="#"><img src="img/enterpreneurs/02.jpeg"
+                                        alt="image"></a></div>
+                            <div class="etntrepreneurs__text">
+                                <a href="#">Monthly meetups</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="membership">
+                <div class="membership__container">
+                    <div class="block-header">
+                        <h2 class="block-header__title block-header--center"><span
+                                class="block-header__decor">M</span>embership plans</h2>
+                    </div>
+                    <div class="membership__body">
+                        <div class="membership__item item-membership">
+                            <div class="item-membership__title">Consumer membership</div>
+                            <div class="item-membership__price">Free</div>
+                            <div class="item-membership__advantages ">
+                                <ul class="item-membership__lists">
+                                    <li class="item-membership__list">Visitor - access the resources</li>
+                                </ul>
+                                <div class="item-membership__cityzen">
+                                    <div class="item-membership__text">
+                                        <p>Cityzen:
+                                            <br>(Registered & verified account)
+                                            Access to resources & calendar
+                                            Non-business posts in chat and immigrant groups
+                                            Giveaways and raffle participation
+                                        </p>
+                                    </div>
+                                    <div class="item-membership__text">
+                                        <p>Honorary cityzen:
+                                            <br>(Registered & verified account)
+                                            all privileges
+                                            (Status earned by active involvement in the community)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="item-membership__button button--white">Choose plan</button>
+                        </div>
+
+                        <div class="membership__item item-membership">
+                            <div class="item-membership__title">Insider</div>
+                            <div class="item-membership__price">$250</div>
+                            <div class="item-membership__advantages ">
+                                <ul class="item-membership__lists">
+                                    <li class="item-membership__list">Be the source of our community</li>
+                                    <li class="item-membership__list">Availability to sponsor our events</li>
+                                </ul>
+                            </div>
+                            <button class="item-membership__button button--white">Choose plan</button>
+                        </div>
+
+                        <div class="membership__item item-membership">
+                            <div class="item-membership__title">Supporter</div>
+                            <div class="item-membership__price">$720</div>
+                            <div class="item-membership__advantages ">
+                                <ul class="item-membership__lists">
+                                    <li class="item-membership__list">Be the source of our community</li>
+                                    <li class="item-membership__list">Availability to sponsor our events</li>
+                                    <li class="item-membership__list">Event speaking opportunity included</li>
+                                    <li class="item-membership__list">Featured in giveaways / raffles</li>
+                                </ul>
+                            </div>
+                            <button class="item-membership__button button--white">Choose plan</button>
+                        </div>
+
+                        <div class="membership__item item-membership">
+                            <div class="item-membership__title">Community Partner</div>
+                            <div class="item-membership__price">$2400</div>
+                            <div class="item-membership__advantages ">
+                                <ul class="item-membership__lists">
+                                    <li class="item-membership__list">Be the source of our community</li>
+                                    <li class="item-membership__list">Availability to sponsor our events</li>
+                                    <li class="item-membership__list">Educational event sponsor and speaking included (2
+                                        per year)</li>
+                                    <li class="item-membership__list">Banner on our Website</li>
+                                    <li class="item-membership__list">Featured in giveaways / raffles</li>
+                                    <li class="item-membership__list">Ability to add corporate events to the community
+                                        calendar </li>
+                                </ul>
+                            </div>
+                            <button class="item-membership__button button--white">Choose plan</button>
+                        </div>
+                    </div>
+                    <div class="membership__under">
+                        <p>If you change or rate plan, the VAT rate may be charged according to the laws of your state.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__body ">
+                    <nav class="footer-menu__body footer-menu">
+
+                        <div class="footer-menu__columns">
+                            <div class="footer-menu__logo">
+                                <img src="img/logo-footer.svg" alt="logo">
+                            </div>
+                            <ul class="footer-menu__column">
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Home</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">About us</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Gallery</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Contacts</a></li>
+                                <li class="footer-menu__item has-submenu"><a href="#"
+                                        class="footer-menu__link">Services</a>
+                                    <ul class="submenu">
+                                        <li class="footer-menu__item-link"><a href="#"
+                                                class="footer-menu__link--small">Rental
+                                                housing</a>
+                                        </li>
+                                        <li class="footer-menu__item-link"><a href="#"
+                                                class="footer-menu__link--small">Work</a>
+                                        </li>
+                                        <li class="footer-menu__item-link"><a href="#"
+                                                class="footer-menu__link--small">Services</a>
+                                        </li>
+                                        <li class="footer-menu__item-link"><a href="#"
+                                                class="footer-menu__link--small">Community</a>
+                                        </li>
+                                    </ul>
+                            </ul>
+
+                            <ul class="footer-menu__column">
+                                <li class="footer-menu__item has-submenu"><a href="#"
+                                        class="footer-menu__link">Partners</a>
+                                    <ul class="submenu">
+                                        <li class="footer-menu__item-link"><a href="#"
+                                                class="footer-menu__link--small">Highlands</a>
+                                        </li>
+                                        <li class="footer-menu__item-link"><a href="#"
+                                                class="footer-menu__link--small">Health
+                                                Center</a>
+                                        </li>
+                                        <li class="footer-menu__item-link"><a href="#"
+                                                class="footer-menu__link--small">Afisha
+                                                Media</a>
+                                        </li>
+                                        <li class="footer-menu__item-link"><a href="#"
+                                                class="footer-menu__link--small">Future
+                                                Honda</a>
+                                        </li>
+                                        <li class="footer-menu__item-link"><a href="#"
+                                                class="footer-menu__link--small">Maita
+                                                Mazda</a>
+                                        </li>
+                                        <li class="footer-menu__item-link"><a href="#"
+                                                class="footer-menu__link--small">Citrus
+                                                Plaza</a>
+                                        </li>
+                                        <li class="footer-menu__item-link"><a href="#"
+                                                class="footer-menu__link--small">Team
+                                                Diesel</a>
+                                        </li>
+                                        <li class="footer-menu__item-link"><a href="#"
+                                                class="footer-menu__link--small">Ashton &
+                                                Price</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                            <ul class="footer-menu__column">
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Raffles &
+                                        giveaways</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Community
+                                        calendar</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Influencers</a></li>
+                            </ul>
+
+                            <ul class="footer-menu__column">
+                                <li class="footer-menu__item has-submenu"><a href="#"
+                                        class="footer-menu__link">Entrepreneurs</a>
+                                    <ul class="submenu">
+                                        <li class="footer-menu__item-link"><a href="#"
+                                                class="footer-menu__link--small">Monthly meetups</a></li>
+
+                                        <li class="footer-menu__item-link"><a href="#"
+                                                class="footer-menu__link--small">Real estate meetups</a></li>
+                                    </ul>
+
+                                </li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Membership plans</a>
+                                </li>
+                            </ul>
+
+                            <ul class="footer-menu__column">
+                                <a href="#popup1" class="button__join button popup-link">Join us</a>
+                            </ul>
+
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="copyright">
+                    <div class="copyright__body">
+                        <div class="copyright__text">
+                            <p>©Copyright 2023 | All right reserved 2023 | Development by <a href="#"
+                                    class="copyright__link">Rivo Agency</a></p>
+                        </div>
+                        <div class="copyright__privacy">
+                            <a href="#popup2" class="copyright__terms popup-link">Privacy Policy & Term of Use</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

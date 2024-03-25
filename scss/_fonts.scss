@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+@font-face {
+  font-family: "Marones";
+  src: url(/fonts/Marones/Marones.woff) format("woff"),
+    url(/fonts/Marones/Marones.woff2) format("woff2");
+}
+@font-face {
+  font-family: "GilroySb";
+  src: url("/fonts/Gilroy/Gilroy-Semibold.woff2") format("woff2"),
+    url("/fonts/Gilroy/Gilroy-Semibold.woff") format("woff"),
+    url("/fonts/Gilroy/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GilroyB";
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url("/fonts/Gilroy/Gilroy-Bold.woff2") format("woff2"),
+    url("/fonts/Gilroy/Gilroy-Bold.woff") format("woff"),
+    url("/fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GilroyM";
+  src: local("Gilroy Medium"), local("Gilroy-Medium"),
+    url("/fonts/Gilroy/Gilroy-Medium.woff2") format("woff2"),
+    url("/fonts/Gilroy/Gilroy-Medium.woff") format("woff"),
+    url("/fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url("/fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"),
+    url("/fonts/Gilroy/Gilroy-Regular.woff") format("woff"),
+    url("/fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GilroyL";
+  src: local("Gilroy Light"), local("Gilroy-Light"),
+    url("/fonts/Gilroy/Gilroy-Light.woff2") format("woff2"),
+    url("/fonts/Gilroy/Gilroy-Light.woff") format("woff"),
+    url("/fonts/Gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+$fontFamily: "Poppins";
